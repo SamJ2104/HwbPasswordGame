@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #1b1b1b;
+    font-family: "Istok web";
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;     /* Center the content vertically if needed */
+    min-height: 100vh;       /* Ensure the body takes the full viewport height */
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0; /* Align the header to the right */
+}
+
+/*-----===MAIN===-----*/
+main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: flex-end; /* Align the main content to the right */
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+article {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align article content to the right */
+    justify-content: start;
+}
+
+.password-game {
+    height: 250px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pwgame-title {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pwgame-form {
+    height: 50%;
+    min-width: 475px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.pwgame-input {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+
+}
+
+.pwgame-textarea {
+    font-family: "Istok web";
+    height: 40px; /* Height similar to a single line input */
+    width: 100%; /* Adjust width as needed */
+    padding: 0; /* Remove padding to align text with the underline */
+    margin: 0; /* Remove margin to ensure it aligns perfectly */
+    border: none; /* Remove default border */
+    border-bottom: 1px solid rgb(0, 0, 0); /* Grey underline for the textarea */
+    background-color: transparent; /* Transparent background to match Microsoft login style */
+    resize: none; /* Hide the resize handle */
+    box-sizing: border-box; /* Ensure padding and border are included in the element’s total width and height */
+    line-height: 1.5; /* Adjust line-height to vertically center text */
+    outline: none; /* Remove default outline on focus */
+    font-size: 16px; /* Adjust font size for readability */
+}
+
+.pwgame-counter {
+    display: none;
+}
+
+/*--=REQUIREMENTS=--*/
+.requirements-container {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: -150px;
+}
+
+.requirements-title {
+    height: 0%;
+}
+
+.requirements {
+    
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.req-title {
+    height: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align req-title content to the right */
+}
+
+.req-title h3 {
+    width: 95%;
+}
+
+.req-description {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start; /* Align req-description content to the top */
+    justify-content: center;
+    transition: all .3s;
+}
+
+.req-description h3 {
+    height: 95%;
+    width: 95%;
+}
+
+/*-=RIGHT|WRONG=-*/
+.req-container-incomplete {
+    overflow: hidden;
+}
+
+.req-container-incomplete .req-description {
+    color: #1b1b1b;
+}
+
+.req-container-complete .req-description {
+    display: none;
+}
+
+.disabled {
+    display: none;
+}
