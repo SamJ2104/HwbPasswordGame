@@ -145,5 +145,70 @@ password.addEventListener("input", () => {
         state = false;
         modifier.modifyReq10(state, cleared);
     }
- 
+
+    var req11 = checker.checkReq11(passwordContent);
+    if (req11) {
+        if(cleared == 10){
+            cleared = 11;
+        }
+        state = true;
+        modifier.modifyReq11(state, cleared);
+    }
+    else{
+        state = false;
+        modifier.modifyReq11(state, cleared);
+    }
+
+    var req12 = checker.checkReq12(passwordContent);
+    if (req12) {
+        if(cleared == 11){
+            cleared = 12;
+        }
+        state = true;
+        modifier.modifyReq12(state, cleared);
+    }
+    else{
+        state = false;
+        modifier.modifyReq12(state, cleared);
+    }
+
+    var req13 = checker.checkReq13(passwordContent);
+    if (req13) {
+        if(cleared == 12){
+            cleared = 13;
+        }
+        state = true;
+        modifier.modifyReq13(state, cleared);
+    }
+    else{
+        state = false;
+        modifier.modifyReq13(state, cleared);
+    }
+
+    var req14 = checker.checkReq14(passwordContent);
+    if (req14) {
+        if(cleared == 13){
+            cleared = 14;
+        }
+        state = true;
+        modifier.modifyReq14(state, cleared);
+    }
+    else{
+        state = false;
+        modifier.modifyReq14(state, cleared);
+    }
+
+    var req15 = checker.checkReq15(passwordContent);
+    if (req15) {
+        if(cleared == 14){
+            cleared = 15;
+        }
+        state = true;
+        modifier.modifyReq15(state, cleared);
+    }
+    else{
+        state = false;
+        modifier.modifyReq15(state, cleared);
+    }
+
 });

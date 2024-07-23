@@ -42,7 +42,7 @@ export function checkReq3(pw) {
     }
 }
 
-export function checkReq7(pw) {
+export function checkReq11(pw) {
     let paises = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
 
     pw = pw.toLowerCase();
@@ -98,7 +98,7 @@ export function checkReq5(pw) {
 
 }
 
-export function checkReq8(pw) {
+export function checkReq12(pw) {
     let paises = ["car", "train", "bus", "plane", "bike", "scooter", "skateboard", "taxi", "walk", "run"];
 
     pw = pw.toLowerCase();
@@ -112,7 +112,7 @@ export function checkReq8(pw) {
     return false;
 }
 
-export function checkReq9(pw) {
+export function checkReq13(pw) {
     let paises = ["per", "por"];
 
     pw = pw.toLowerCase();
@@ -126,8 +126,8 @@ export function checkReq9(pw) {
     return false;
 }
 
-export function checkReq10(pw) {
-    let paises = ["gfp54"];
+export function checkReq14(pw) {
+    let paises = ["wc2bd"];
 
     pw = pw.toLowerCase();
 
@@ -137,5 +137,59 @@ export function checkReq10(pw) {
         }
     }
 
+    return false;
+}
+
+export function checkReq7(pw) {
+    let regex = /[A-Z]/g; // Regular expression to match capital letters
+    let capitals = pw.match(regex);
+
+    if(capitals && capitals.length >= 3){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+export function checkReq8(pw) {
+    for (let i = 0; i < pw.length - 1; i++) {
+        let currentChar = pw.charCodeAt(i);
+        let nextChar = pw.charCodeAt(i + 1);
+
+        // Check if both characters are alphabetic
+        if ((currentChar >= 65 && currentChar <= 90) || (currentChar >= 97 && currentChar <= 122)) {
+            if ((nextChar >= 65 && nextChar <= 90) || (nextChar >= 97 && nextChar <= 122)) {
+                // Check if the current character and the next character are consecutive in the alphabet
+                if ((nextChar === currentChar + 1) || (nextChar === currentChar - 1)) {
+                    return false;
+                }
+            }
+        }
+    }
+    return true;
+}
+
+export function checkReq9(pw) {
+    for (let i = 0; i < pw.length - 1; i++) {
+        if (/\d/.test(pw[i]) && /\d/.test(pw[i + 1])) {
+            return false;
+        }
+    }
+    return true;
+}
+export function checkReq10(pw) {
+    let paises = ["s"];
+
+    pw = pw.toLowerCase();
+
+    for (let index = 0; index < paises.length; index++) {
+        if(pw.includes(paises[index])){
+            return true;
+        }
+    }
+
+    return false;
+}
+export function checkReq15(pw) {
     return false;
 }
