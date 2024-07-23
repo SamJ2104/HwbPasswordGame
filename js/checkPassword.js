@@ -9,16 +9,17 @@ export function checkReq1(pw) {
 }
 
 export function checkReq2(pw) {
-    let regex = /[a-zA-Z]/g;
-    let letras = pw.match(regex);
+    let regex = /\d/g; // Regular expression to match digits
+    let digits = pw.match(regex);
 
-    if(letras && letras.length >= 6){
+    if(digits && digits.length >= 3){
         return true;
     }
     else{
         return false;
     }
 }
+
 
 export function checkReq6(pw) {
     if (pw.length < 20) {
@@ -33,7 +34,7 @@ export function checkReq3(pw) {
     let regex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/g;
     let caracteresEspeciais = pw.match(regex);
 
-    if(caracteresEspeciais && caracteresEspeciais.length >= 4){
+    if(caracteresEspeciais && caracteresEspeciais.length >= 2){
         return true;
     }
     else{
