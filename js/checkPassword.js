@@ -42,7 +42,7 @@ export function checkReq3(pw) {
     }
 }
 
-export function checkReq5(pw) {
+export function checkReq7(pw) {
     let paises = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
 
     pw = pw.toLowerCase();
@@ -68,7 +68,7 @@ export function checkReq4(pw) {
     }
 }
 
-export function checkReq7(pw) {
+export function checkReq5(pw) {
     let regex = /\d/g;
     let digitos = pw.match(regex);
     let soma = 0;
